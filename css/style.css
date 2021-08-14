@@ -71,6 +71,8 @@ body {
 
 section{
     margin-bottom: 2rem;
+	padding-top:8.25rem;
+	margin-top:-8.25rem;
 }
 
 .h1,
@@ -1214,7 +1216,7 @@ textarea.form-control.is-invalid {
 .navbar-nav {
 	display: flex;
 	flex-direction: column;
-	padding-left: 0;
+	padding-left: 0.75rem;
 	margin-bottom: 0;
 	list-style: none
 }
