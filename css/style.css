@@ -326,6 +326,10 @@ iframe {
 		max-width: 480px
 	}
 
+	.btn-registrasi-akun{
+		margin:5px;
+	} 
+
     
 }
 
@@ -4811,9 +4815,9 @@ blockquote {
 }
 
 @media (max-width:768px){
-	.btn-registrasi-akun{
+	/* .btn-registrasi-akun{
 		margin:5px;
-	}
+	} */
 
 	.btn-footer {
 		margin:10px auto;
