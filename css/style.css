@@ -3810,7 +3810,7 @@ button.hamburger.animate.active:after {
 	line-height: 2.3rem;
 	font-size: 1.2rem;
 	color: #050404!important;
-	left: 1px;
+	left: 0.03rem;
 	top: 4px;
 	height: 2.3rem;
 	width: 2.3rem;
