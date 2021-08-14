@@ -4810,9 +4810,13 @@ blockquote {
 	}
 }
 
-@media (min-width:768px){
+@media (max-width:768px){
 	.btn-registrasi-akun{
 		margin:5px;
+	}
+
+	.btn-footer {
+		margin:10px auto;
 	}
 }
 
