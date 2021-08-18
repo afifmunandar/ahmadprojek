@@ -22,7 +22,7 @@
             <!-- Page Title -->
             <div class="page-heading-mobile justify-content-center">
               <h6 class="mb-0">
-                Lengkapi Profile Anda
+                Ubah Profil
               </h6>
             </div>
             <!-- Settings -->
@@ -32,9 +32,32 @@
         </div>
       </div> 
     <!-- /header -->
+
+    <div class="custom-container">
+      <div class="page-content-wrapper">
+        <ul class="ps-0 chat-user-list">
+          <!-- Single Chat User -->
+          <li class="p-1rem mb-5">
+            <a class="d-flex" href="#">
+              <!-- Thumbnail -->
+              <div class="chat-user-thumbnail me-3 shadow">
+                <img class="img-circle" src="img/u3.jpg" alt="">
+              </div>
+              <!-- Info -->
+              <div class="chat-user-info">
+                <h6 class="text-truncate2">
+                  Perbarui Foto Profil
+                  <span class="circle-icon-black text-black outline-black"><i class="uil uil-angle-right"></i></span>
+                </h6> 
+              </div>
+            </a> 
+          </li>  
+        </ul> 
+      </div>
+    </div>
      
       <div class="custom-container">
-        <div class="page-content-wrapper">
+        <div class="content-wrapper-mobile">
             <div class="card">
                 <div class="card-body"> 
                   <div class="col-md-12 col-lg-12">   
@@ -43,16 +66,16 @@
                         <form class="contact-form" method="post" action="">
                             <div class="messages"></div>
                             <div class="controls">
-                              <div class="row gx-4">
-                                <div class="col-12">
-                                    <label for="custom-file-upload" class="filupp">
-                                        <span class="filupp-file-name js-value">Upload Foto</span>
-                                        <input type="file" name="attachment-file" value="1" id="custom-file-upload"/>
-                                    </label>
-                                  </div> 
+                              <div class="row gx-4"> 
                                 <div class="col-12">
                                   <div class="form-label-group mb-4">
-                                    <input id="form_name" type="text" name="email" class="form-control" placeholder="No HP/WhatsApp" required="required" data-error="No HP tidak boleh kosong">
+                                    <input id="form_name" type="text" name="nama" class="form-control" placeholder="Nama Lengkap" required="required" data-error="Nama Lengkap boleh kosong">
+                                    <div class="help-block with-errors"></div>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-label-group mb-4">
+                                    <input id="nohp" type="text" name="nohp" class="form-control" placeholder="" required="required" data-error="No HP boleh kosong" value="081234567890">
                                     <div class="help-block with-errors"></div>
                                   </div>
                                 </div>
@@ -145,6 +168,20 @@
                                       </div> 
                                   </div> 
                                   <div class="col-12">
+                                    <div class="form-select-wrapper">
+                                        <select class="form-select" aria-label="Default select example">
+                                          <option selected="">Pilih Kelurahan
+                                          </option>
+                                          <option value="1">Bogor Barat
+                                          </option>
+                                          <option value="2">Bandung Raya
+                                          </option>
+                                          <option value="3">Lainnya
+                                          </option>
+                                        </select>
+                                      </div> 
+                                  </div> 
+                                  <div class="col-12">
                                     <div class="form-label-group mb-4">
                                       <input id="form_name" type="text" name="kodepos" class="form-control" placeholder="Kode Pos" required="required" data-error="Kode Pos tidak boleh kosong">
                                       <div class="help-block with-errors"></div>
@@ -223,8 +260,7 @@
           <div class="row mt-lg-0">
             <div class="col-xl-12">
               <div class="nav justify-content-center">
-                <a href="#" class="btn btn-md btn-primary rounded-6 btn-registrasi-akun mb-2">Simpan <span class="circle-icon"><i class="uil uil-angle-right"></i></span></a>
-                <a href="#" class="btn btn-md btn-outline-black rounded-6 mb-2">Lewati Dahulu <span class="circle-icon-black text-black outline-black"><i class="uil uil-angle-right"></i></span></a>
+                <a href="#" class="btn btn-md btn-primary rounded-6 btn-w100 mb-2">Simpan <span class="circle-icon"><i class="uil uil-angle-right"></i></span></a>
               </div>
             </div> 
           </div>
