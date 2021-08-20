@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>Pembayaran Donasi Cicilan</title> 
+  <link rel="stylesheet" href="css/style.css">   
+</head>
+
+<body>
+  <div class="content-wrapper wrapper-mobile">
+    <div class="header-area" id="headerArea">
+        <div class="custom-container">
+          <!-- Header Content -->
+          <div class="header-content position-relative d-flex align-items-center justify-content-between">
+            <!-- Back Button -->
+            <div class="back-button">
+                <a class="text-black" href="#">  </a>
+             </div>
+            <!-- Page Title -->
+            <div class="page-heading-mobile">
+              <h6 class="mb-0">List Penerima Donasi</h6>
+            </div>
+            <!-- Settings -->
+            <div class="">
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <div class="custom-container footer-padding-mobile2">
+        <div class="page-content-wrapper"> 
+                <div class="header align-items-center justify-content-between">
+                <div class="slider"></div>
+                <div class="tab one ripple active">
+                    <div class="costum-container">
+                        Aktif
+                    </div>
+                    
+                </div>
+                <div class="tab two ripple">Selesai/Non-Aktif</div> 
+                </div>
+            <div class="page main pt5">
+                <div class="costum-container">
+                    <ul class="ps-0 chat-user-list">
+                        <!-- Single Chat User -->
+                        <li class="p-1rem mb-5">
+                            <a class="d-flex" href="#">
+                            <!-- Thumbnail -->
+                            <div class="chat-user-thumbnail me-3 shadow">
+                                <img class="img-circle" src="img/u3.jpg" alt="">
+                            </div>
+                            <!-- Info -->
+                            <div class="chat-user-info">
+                                <h6 class="text-truncate">
+                                Nama Santri
+                                </h6>
+                                <div class="last-chat">
+                                <p class="mb-0 text-gray2">
+                                    Dalam Pengiriman
+                                </p>
+                                </div>
+                            </div>
+                            </a>
+                            <!-- Options -->
+                            <div class="chat-options-btn"> 
+                            </div>
+                        </li> 
+                        <li class="p-1rem mb-5">
+                            <a class="d-flex" href="#">
+                                <!-- Thumbnail -->
+                                <div class="chat-user-thumbnail me-3 shadow">
+                                <img class="img-circle" src="img/u3.jpg" alt="">
+                                </div>
+                                <!-- Info -->
+                                <div class="chat-user-info">
+                                <h6 class="text-truncate">
+                                    Nama Santri
+                                </h6>
+                                <div class="last-chat">
+                                    <p class="mb-0 text-gray2">
+                                        Dalam Pengiriman
+                                    </p>
+                                </div>
+                                </div>
+                            </a>
+                            <!-- Options -->
+                            <div class="chat-options-btn"> 
+                            </div>
+                            </li> 
+                        </ul> 
+                </div>
+                
+            </div>
+            <div class="page tags">
+                <div class="center-wrapper d-flex align-items-center justify-content-center text-center nonaktif"> 
+                    <div class="text-center">  
+                        <img src="img/ion_book-outline.svg" class="mb-2">     
+                        <p class="font-12px text-black"> 
+                            Belum ada data santri
+                        </p>
+                    </div> 
+                </div>
+            </div>    
+         </div>
+        </div>
+      </div>  
+  </div>  
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/theme.js"></script>
+   <script>
+       // Menu
+
+$(".more, .overlay").on('click', function() {
+  $(".menu, .overlay").toggleClass("active");
+});
+
+// Tabs & Windows
+
+$(".tab.one").on('click', function() {
+  $(".slider").removeClass("right");
+  $(".tags").removeClass("active"); 
+  $(".tab.one").addClass("active"); 
+  $(".tab.two").removeClass("active"); 
+  $(".main").removeClass("disabled")
+});
+
+$(".tab.two").on('click', function() {
+  $(".slider").addClass("right"); 
+  $(".tags").addClass("active");
+  $(".tab.two").addClass("active");
+  $(".tab.one").removeClass("active");
+  $(".main").addClass("disabled")
+  $(".main").removeClass("current")
+});
+ 
+// Header Shadow
+
+$(".main").scroll(function() {
+  if ($(this).scrollTop() >= 10) {
+    $(".header").addClass("shadow");
+  } else {
+    $(".header").removeClass("shadow");
+  }
+});
+
+// Ripple Effect
+ 
+$(window).keyup(function (e) {
+  if (e.keyCode == 36) {
+    $('.page').animate({ scrollTop: 0 }, 0);
+  }
+});
+   </script>
+</body>
+
+</html>

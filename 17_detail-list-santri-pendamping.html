@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>Pembayaran Donasi Cicilan</title> 
+  <link rel="stylesheet" href="css/style.css">   
+</head>
+
+<body>
+  <div class="content-wrapper wrapper-mobile">
+    <div class="header-area" id="headerArea">
+        <div class="custom-container">
+          <!-- Header Content -->
+          <div class="header-content position-relative d-flex align-items-center justify-content-between">
+            <!-- Back Button -->
+            <div class="back-button">
+                <a class="text-black" href="#">  </a>
+             </div>
+            <!-- Page Title -->
+            <div class="page-heading-mobile">
+              <h6 class="mb-0">Nama Santri</h6>
+            </div>
+            <!-- Settings -->
+            <div class="">
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <div class="custom-container">
+        <div class="page-content-wrapper">
+            <div class="card">
+                <div class="card-body">
+                    <ul class="progress-list"> 
+                        <li>
+                          <p>Progress Belajar</p>
+                          <div class="progressbar line gold" data-value="40"></div>
+                        </li> 
+                        <li class="mb-0">
+                            <p>Bulan Pendampingan</p>
+                            <div class="progressbar line gold" data-value="40"></div>
+                            <div> 
+                                <span class="font-12px">25/05/2021 - 25/05/2021</span>
+                                <span class="font-12px float-right"><strong>7 Bulan Lagi</strong></span>
+                            </div>
+                          </li> 
+                      </ul>
+                </div>
+            </div> 
+          </div>
+        </div>
+
+        <div class="custom-container">
+            <div class="content-wrapper-mobile">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="font-14px mb-5">Materi Pembelajaran</h2> 
+                        <ul class="progress-list"> 
+                            <li class="outline">
+                              <p>Bab 1</p>
+                              <div class="progressbar line gold" data-value="80"></div>
+                            </li>  
+                            <li class="outline">
+                                <p>Bab 1</p>
+                                <div class="progressbar line gold" data-value="0"></div>
+                              </li>  
+                              <li class="outline">
+                                <p>Bab 2</p>
+                                <div class="progressbar line gold" data-value="0"></div>
+                              </li>  
+                              <li class="outline">
+                                <p>Bab 3</p>
+                                <div class="progressbar line gold" data-value="0"></div>
+                              </li>  
+                              <li class="outline">
+                                <p>Bab 4</p>
+                                <div class="progressbar line soft-gold" data-value="0"></div>
+                              </li>  
+
+                          </ul>
+                    </div>
+                </div>  
+              </div>
+        </div>
+
+        <div class="custom-container">
+            <div class="content-wrapper-mobile"> 
+                <div class="card">
+                    <div class="card-body ">
+                        <p class="font-12px mb-2">
+                            Nama Donatur
+                        </p> 
+                        <h2 class="font-16px">
+                            Bapak/Ibu Nama Donatur
+                        </h2> 
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="custom-container">
+            <div class="content-wrapper-mobile"> 
+                <div class="card">
+                    <div class="card-body ">
+                        <p class="font-12px mb-2">
+                            Nama Donatur
+                        </p> 
+                        <h2 class="font-16px">
+                            Bapak/Ibu Nama Pendamping
+                        </h2> 
+                    </div>
+                </div>
+            </div>
+        </div> 
+      </div>  
+  </div>  
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/theme.js"></script>
+   <script>
+       // Menu
+
+$(".more, .overlay").on('click', function() {
+  $(".menu, .overlay").toggleClass("active");
+});
+
+// Tabs & Windows
+
+$(".tab.one").on('click', function() {
+  $(".slider").removeClass("right");
+  $(".tags").removeClass("active"); 
+  $(".tab.one").addClass("active"); 
+  $(".tab.two").removeClass("active"); 
+  $(".main").removeClass("disabled")
+});
+
+$(".tab.two").on('click', function() {
+  $(".slider").addClass("right"); 
+  $(".tags").addClass("active");
+  $(".tab.two").addClass("active");
+  $(".tab.one").removeClass("active");
+  $(".main").addClass("disabled")
+  $(".main").removeClass("current")
+});
+ 
+// Header Shadow
+
+$(".main").scroll(function() {
+  if ($(this).scrollTop() >= 10) {
+    $(".header").addClass("shadow");
+  } else {
+    $(".header").removeClass("shadow");
+  }
+});
+
+// Ripple Effect
+ 
+$(window).keyup(function (e) {
+  if (e.keyCode == 36) {
+    $('.page').animate({ scrollTop: 0 }, 0);
+  }
+});
+   </script>
+</body>
+
+</html>
