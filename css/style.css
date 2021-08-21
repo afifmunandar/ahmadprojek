@@ -6009,6 +6009,19 @@ blockquote {
 	padding: 1rem;
 }
 
+
+.downloadapp .appimg{
+	width: 180px;
+}
+
+
+
+
+.downloadapp .appstore{
+	text-align: center;
+	margin-top: 20px;
+}
+
 }
 
 @media (max-width:376px){
@@ -6029,6 +6042,14 @@ blockquote {
 	.footer-nav-area {
 		display: none
 	}
+ 
+
+}
+
+@media (max-width:1024px) { 
+	.downloadapp .googleplay{
+		width: 235px;
+	}
 
 }
 
@@ -6039,6 +6060,10 @@ blockquote {
 
 	.btn-footer {
 		margin:10px auto;
+	}
+
+	.downloadapp .appimg{
+		width: 180px;
 	}
 }
 
@@ -14229,6 +14254,7 @@ video.player {
 	background: transparent url("../img/ion_arrow-back-outline.svg") no-repeat;
 	width: 1.5rem;
 	height: 1.5rem;
+	margin-top:-2px;
 }
 
 .header-content .close-button a {
@@ -14245,6 +14271,17 @@ video.player {
 	background: transparent url("../img/ion_notifications-circle-outline.svg") no-repeat;	
 	width: 1.5rem;
 	height: 1.5rem;
+}
+
+.header-content .notif-button2, .header-content .notif-button{
+	margin-top:-20px;
+}
+
+.header-content .notif-button2,
+.header-content .notif-button{ 
+    text-align: right;
+    float: right;
+    margin-right: 1.25rem; 
 }
 
 .header-content .notif-button2 a {
@@ -14469,6 +14506,11 @@ video.player {
 	color: #0d5afd;
 }
 
+.page-heading-mobile{ 
+    text-align: center;
+    margin-top: 18px; 
+}
+
 .page-heading-mobile h6{
 	font-size: 1rem; 
 	white-space: nowrap;
@@ -14484,11 +14526,32 @@ video.player {
 	width: 412px;
 }
 
+.page-heading-mobile.berita{
+	margin-left: 30px;
+}
+
 
 @media (max-width:480px) {
 	.page-heading-mobile h5{ 
 		width: 270px;
 		margin-left: 5px;
+	} 
+	.page-heading-mobile h6{
+		font-size: .875rem;
+	}
+
+	.header-content .back-button a{
+		margin-top:-4px;
+	}
+
+	.page-heading-mobile h6{
+		margin-top:20px;
+	}
+}
+
+@media (max-width:320px){
+	.page-heading-mobile.berita{
+		margin-left: 30px;
 	}
 }
 
@@ -16344,6 +16407,7 @@ color:#bdbdbd;
 .form-check.chat .form-check-input {
 	float: left;
 	margin-left: 0;
+	margin-top:15px;
 	margin-right: 1rem;
 }
 
@@ -16605,4 +16669,25 @@ color:#bdbdbd;
 	line-height: 130%;
 	display: none;
   }
-   
+
+  .downloadapp{
+	  text-align: center;
+	  margin-top: 20px;
+  }
+
+  ::placeholder {  
+	color: #050404;
+	opacity: 1;  
+  }
+  
+  :-ms-input-placeholder {  
+	color: #050404;
+  }
+  
+  ::-ms-input-placeholder {  
+	color: #050404;
+  }
+
+  .wrap-nama{
+	  margin-top:-18px
+  }
