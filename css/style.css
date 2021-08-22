@@ -267,6 +267,10 @@ iframe {
 	}
 }
 
+.bullet ul li{
+	list-style-type: disc!important;
+}
+
 .teks-header {
 	font-size: 1.125rem;
 	font-weight: 700;
